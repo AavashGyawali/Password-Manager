@@ -1,4 +1,6 @@
 // import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () => {
   return (
@@ -11,15 +13,26 @@ const NavBar = () => {
           <span className="text-green-500"> /&gt;</span>
         </div>
         <ul className="flex gap-7 text-lg ">
-          <a href="" className="hover:underline hover:text-gray-300">
-            Home
-          </a>
-          <a href="" className="hover:underline hover:text-gray-300">
-            Contact
-          </a>
-          <a href="" className="hover:underline hover:text-gray-300">
-            About
-          </a>
+          <li>
+            <a
+              href="https://github.com/aavashgyawali"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline hover:text-gray-300"
+            >
+              <FontAwesomeIcon icon={faGithub} size="xl" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aavashgyawali/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline hover:text-gray-300"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="xl" />
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
