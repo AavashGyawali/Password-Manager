@@ -82,15 +82,17 @@ const Manager = () => {
     <>
       <ToastContainer />
       <Background />
-      <div className="py-20 sm:container sm:mx-auto flex flex-col justify-center w-full items-center gap-6 ">
-        <div className="text flex flex-col items-center">
-          <div className="logo font-semibold text-2xl sm:text-4xl cursor-pointer">
+      <div className="py-20 sm:container sm:mx-auto flex flex-col justify-center w-full items-center gap-10 ">
+        <div className="text flex flex-col 2xl:gap-4 items-center">
+          <div className=" logo font-semibold text-2xl sm:text-4xl cursor-pointer 2xl:text-6xl">
             <span className="text-green-500">&lt;</span>
             Pass
             <span className="text-red-400">Manager</span>
             <span className="text-green-500"> /&gt;</span>
           </div>
-          <p className="text-slate-900">Password Manager for you</p>
+          <p className="text-slate-900 2xl:text-2xl">
+            Password Manager for you
+          </p>
         </div>
         <Form
           togglePassword={togglePassword}

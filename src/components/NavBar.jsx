@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="bg-slate-900  h-16 text-white">
       <div className="nav flex  justify-between items-center mx-10 lg:container  sm:mx-20 md:mx-auto lg:mx-auto   md:px-40 h-16  ">
-        <div className="logo font-semibold  cursor-pointer text-lg sm:text-2xl ">
+        <div className="logo font-semibold  cursor-pointer text-lg sm:text-2xl 2xl:text-4xl ">
           <a href="./">
             <span className="text-green-500">&lt;</span>
             Pass
@@ -14,7 +14,7 @@ const NavBar = () => {
             <span className="text-green-500"> /&gt;</span>
           </a>
         </div>
-        <ul className="flex gap-2 sm:gap-7 text-lg ">
+        <ul className="flex gap-2 sm:gap-7 text-lg 2xl:text-2xl ">
           <li>
             <a
               href="https://github.com/aavashgyawali"
@@ -25,7 +25,7 @@ const NavBar = () => {
               <FontAwesomeIcon
                 icon={faGithub}
                 size="xl"
-                className="text-lg sm:text-3xl"
+                className="text-lg sm:text-3xl 2xl:text-4xl"
               />
             </a>
           </li>
@@ -39,7 +39,7 @@ const NavBar = () => {
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="xl"
-                className="text-lg sm:text-3xl"
+                className="text-lg sm:text-3xl 2xl:text-4xl"
               />
             </a>
           </li>
