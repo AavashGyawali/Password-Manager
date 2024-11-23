@@ -82,9 +82,9 @@ const Manager = () => {
     <>
       <ToastContainer />
       <Background />
-      <div className="py-20 container mx-auto flex flex-col items-center gap-6 ">
+      <div className="py-20 sm:container sm:mx-auto flex flex-col justify-center w-full items-center gap-6 ">
         <div className="text flex flex-col items-center">
-          <div className="logo font-semibold text-4xl cursor-pointer">
+          <div className="logo font-semibold text-2xl sm:text-4xl cursor-pointer">
             <span className="text-green-500">&lt;</span>
             Pass
             <span className="text-red-400">Manager</span>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 const Form = ({ form, handleChange, showPassword, togglePassword }) => {
   return (
-    <div className="input flex flex-col gap-6">
+    <div className="input flex flex-col gap-6 sm:w-fit px-10 w-full sm:m-auto ">
       <input
         type="text"
         name="website"
@@ -16,7 +16,7 @@ const Form = ({ form, handleChange, showPassword, togglePassword }) => {
       invalid:border-pink-500 invalid:text-pink-600
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
       />
-      <div className="flex gap-4  items-center">
+      <div className="flex gap-6  items-center flex-col sm:flex-row w-full">
         <input
           type="text"
           value={form.username}
@@ -27,9 +27,10 @@ const Form = ({ form, handleChange, showPassword, togglePassword }) => {
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
       invalid:border-pink-500 invalid:text-pink-600
-      focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+      w-full"
         />
-        <div className="relative">
+        <div className="relative w-full">
           <input
             type={showPassword ? "text" : "password"}
             value={form.password}
@@ -40,7 +41,7 @@ const Form = ({ form, handleChange, showPassword, togglePassword }) => {
                       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                       invalid:border-pink-500 invalid:text-pink-600
-                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500 w-full"
           />
           <FontAwesomeIcon
             icon={showPassword ? faEye : faEyeSlash}

@@ -57,20 +57,32 @@ const Table = ({ passwords, setPasswords, setForm }) => {
   return (
     <>
       {passwords && passwords.length > 0 ? (
-        <div className="relative overflow-x-auto rounded-md">
-          <table className=" w-full text-sm text-left rtl:text-right text-black dark:text-black">
+        <div className="relative overflow-x-auto rounded-md flex flex-row mx-2">
+          <table className=" w-full sm:w-full text-sm text-left rtl:text-right text-black dark:text-black">
             <thead className=" text-xs text-white uppercase bg-white dark:bg-[#484848] dark:text-white">
               <tr>
-                <th scope="col" className="px-6 py-3 border border-gray-400">
+                <th
+                  scope="col"
+                  className="px-2 sm:px-6 py-3 border border-gray-400"
+                >
                   Website Name
                 </th>
-                <th scope="col" className="px-6 py-3 border border-gray-400">
+                <th
+                  scope="col"
+                  className="px-2 sm:px-6 py-3 border border-gray-400"
+                >
                   User Name
                 </th>
-                <th scope="col" className="px-6 py-3 border border-gray-400">
+                <th
+                  scope="col"
+                  className="px-2 sm:px-6 py-3 border border-gray-400"
+                >
                   Password
                 </th>
-                <th scope="col" className="px-6 py-3 border border-gray-400">
+                <th
+                  scope="col"
+                  className="px-2 sm:px-6 py-3 border border-gray-400"
+                >
                   Actions
                 </th>
               </tr>
@@ -82,8 +94,8 @@ const Table = ({ passwords, setPasswords, setForm }) => {
                     key={index}
                     className="border bg-white  dark:bg-gray-50 dark:border-gray-100"
                   >
-                    <td className="px-6 py-4 border border-gray-200">
-                      <div className="flex items-center justify-between gap-2">
+                    <td className="px-2 sm:px-6 py-4 border border-gray-200">
+                      <div className="flex flex-wrap items-center sm:justify-between gap-2">
                         <a
                           href={passwords.website}
                           target="_blank"
@@ -113,8 +125,8 @@ const Table = ({ passwords, setPasswords, setForm }) => {
                         />
                       </div>
                     </td>
-                    <td className="px-6 py-4 border border-gray-200 ">
-                      <div className="flex items-center justify-between gap-2">
+                    <td className="px-2 sm:px-6 py-4 border border-gray-200 ">
+                      <div className="flex flex-wrap items-center sm:justify-between gap-2">
                         {passwords.username}
                         <FontAwesomeIcon
                           icon={faCopy}
@@ -136,8 +148,8 @@ const Table = ({ passwords, setPasswords, setForm }) => {
                         />
                       </div>
                     </td>
-                    <td className="px-6 py-4 border border-gray-200">
-                      <div className="flex items-center justify-between gap-2">
+                    <td className="px-2 sm:px-6 py-4 border border-gray-200">
+                      <div className="flex flex-wrap items-center sm:justify-between gap-2">
                         {passwords.password}
                         <FontAwesomeIcon
                           icon={faCopy}
@@ -159,8 +171,8 @@ const Table = ({ passwords, setPasswords, setForm }) => {
                         />
                       </div>
                     </td>
-                    <td className="px-6 py-4 border border-gray-200">
-                      <div className="flex items-center justify-between gap-2">
+                    <td className="px-2 sm:px-6 py-4 border border-gray-200">
+                      <div className="flex flex-wrap items-center sm:justify-between gap-2">
                         <FontAwesomeIcon
                           icon={faEdit}
                           size="lg"
